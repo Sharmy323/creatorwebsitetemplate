@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara Abad | Media Page</title>
+    <meta
+      name="description"
+      content="Sara Abad official media page with social links, Spotify profile, and selected brand collaborations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="shell topbar">
+      <p class="logo">Sara Abad</p>
+      <nav class="social-nav" aria-label="Social links">
+        <a href="https://www.instagram.com/iamsaraabad/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@saraabadmu" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.linkedin.com/in/sara-garc%C3%ADa-abad-19b948164/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shell hero">
+        <img
+          class="hero-photo"
+          src="sara-photo.jpg"
+          alt="Sara Abad smiling in an airplane cockpit wearing a headset and high-visibility vest"
+          loading="eager"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+        <p class="photo-fallback">Save your provided image as <code>sara-photo.jpg</code> in the project root.</p>
+
+        <div class="hero-copy">
+          <p class="kicker">Artist + Creator · Spain</p>
+          <h1>Sara Abad</h1>
+          <p>
+            Music-driven creator blending pop aesthetics with modern brand storytelling.
+          </p>
+          <a class="btn" href="https://open.spotify.com/artist/1UOkEgsYGAW2aFbLemhunt?si=dZ9lsjVOSlq-ufu7lNiA9g" target="_blank" rel="noopener noreferrer">Open Spotify Profile</a>
+        </div>
+      </section>
+
+      <section class="shell section">
+        <p class="kicker">About</p>
+        <h2>Short bio</h2>
+        <p>
+          Add Sara's final about copy here. Keep it to 3–4 lines focused on audience, tone, and what makes her content distinctive.
+        </p>
+      </section>
+
+      <section class="shell section">
+        <p class="kicker">Selected Brand Collaborations</p>
+        <h2>Brands Sara has worked with</h2>
+        <div class="brand-grid">
+          <article class="brand-card">
+            <img src="logo-ansa-per-ansa.svg" alt="Ansa Per Ansa Menorca logo" />
+          </article>
+          <article class="brand-card">
+            <img src="logo-pantene.svg" alt="Pantene logo" />
+          </article>
+          <article class="brand-card">
+            <img src="logo-uno-de-50.svg" alt="Uno de 50 logo" />
+          </article>
+        </div>
+      </section>
+
+      <section class="shell section contact">
+        <p class="kicker">Bookings</p>
+        <h2>Let’s build the next campaign.</h2>
+        <a class="btn" href="mailto:partnerships@saraabad.com">partnerships@saraabad.com</a>
+      </section>
+    </main>
+
+    <footer class="shell footer">
+      <p>© <span id="year"></span> Sara Abad.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
