@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1280 800">
   <defs>
     <style>
       text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
@@ -6,127 +6,144 @@
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="800" fill="#f6f6f7"/>
+  <rect width="1280" height="800" fill="#f1f2f3"/>
 
   <!-- Top nav bar -->
-  <rect width="1200" height="56" fill="#1a1a1a"/>
-  <text x="24" y="35" fill="#ffffff" font-size="16" font-weight="600">Chargeback Manager</text>
-  <rect x="1100" y="16" width="80" height="24" rx="4" fill="#5c6ac4"/>
-  <text x="1140" y="33" fill="#ffffff" font-size="12" text-anchor="middle">Help</text>
+  <rect width="1280" height="56" fill="#1a1a1a"/>
+  <circle cx="28" cy="28" r="10" fill="#5c6ac4"/>
+  <text x="46" y="33" fill="#ffffff" font-size="15" font-weight="600">WinBack</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="56" width="220" height="744" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
-  <rect x="0" y="100" width="220" height="40" fill="#f2f2f7"/>
-  <text x="20" y="125" fill="#5c6ac4" font-size="14" font-weight="600">Dashboard</text>
-  <text x="20" y="167" fill="#6d7175" font-size="14">Active Disputes</text>
-  <text x="20" y="207" fill="#6d7175" font-size="14">Evidence Submitted</text>
-  <text x="20" y="247" fill="#6d7175" font-size="14">Won Disputes</text>
-  <text x="20" y="287" fill="#6d7175" font-size="14">Settings</text>
+  <rect x="0" y="56" width="200" height="744" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
+  <rect x="0" y="98" width="200" height="36" fill="#f2f2f7"/>
+  <rect x="12" y="110" width="3" height="12" rx="2" fill="#5c6ac4"/>
+  <text x="22" y="121" fill="#5c6ac4" font-size="13" font-weight="600">Dashboard</text>
+  <text x="18" y="158" fill="#6d7175" font-size="13">Active Disputes</text>
+  <text x="18" y="192" fill="#6d7175" font-size="13">Resolved</text>
+  <text x="18" y="226" fill="#6d7175" font-size="13">Settings</text>
 
-  <!-- Main content area -->
+  <!-- Main content -->
   <!-- Page title -->
-  <text x="252" y="95" fill="#202223" font-size="22" font-weight="700">Dispute Dashboard</text>
+  <text x="228" y="90" fill="#202223" font-size="20" font-weight="700">ChargeDesk — Chargeback Manager</text>
 
-  <!-- Stat cards row -->
-  <!-- Card 1: Open -->
-  <rect x="240" y="112" width="210" height="100" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="260" y="142" fill="#6d7175" font-size="12">Open Disputes</text>
-  <text x="260" y="185" fill="#202223" font-size="32" font-weight="700">12</text>
-  <rect x="380" y="168" width="50" height="22" rx="11" fill="#fff3cd"/>
-  <text x="405" y="184" fill="#916a00" font-size="11" text-anchor="middle">Active</text>
+  <!-- CRITICAL BANNER -->
+  <rect x="216" y="104" width="1048" height="52" rx="6" fill="#fff4f4" stroke="#fead9a" stroke-width="1"/>
+  <rect x="216" y="104" width="4" height="52" rx="2" fill="#d72c0d"/>
+  <text x="232" y="126" fill="#d72c0d" font-size="13" font-weight="600">2 disputes need your response within 3 days</text>
+  <text x="232" y="144" fill="#6d7175" font-size="12">Submit your evidence before the deadline — missed deadlines result in automatic losses.</text>
 
-  <!-- Card 2: Won -->
-  <rect x="465" y="112" width="210" height="100" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="485" y="142" fill="#6d7175" font-size="12">Won Disputes</text>
-  <text x="485" y="185" fill="#008060" font-size="32" font-weight="700">34</text>
-  <rect x="600" y="168" width="55" height="22" rx="11" fill="#d3f0e2"/>
-  <text x="627" y="184" fill="#008060" font-size="11" text-anchor="middle">Won</text>
+  <!-- Stats row -->
+  <!-- Card 1 -->
+  <rect x="216" y="168" width="330" height="90" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="193" fill="#6d7175" font-size="12">Open Disputes</text>
+  <text x="236" y="232" fill="#202223" font-size="34" font-weight="700">5</text>
+  <text x="290" y="232" fill="#6d7175" font-size="12">$843.00 at risk</text>
 
-  <!-- Card 3: Recovered -->
-  <rect x="690" y="112" width="210" height="100" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="710" y="142" fill="#6d7175" font-size="12">Amount Recovered</text>
-  <text x="710" y="185" fill="#202223" font-size="32" font-weight="700">$4,820</text>
+  <!-- Card 2 -->
+  <rect x="562" y="168" width="330" height="90" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="582" y="193" fill="#6d7175" font-size="12">Disputes Won</text>
+  <text x="582" y="232" fill="#008060" font-size="34" font-weight="700">34</text>
+  <text x="636" y="232" fill="#6d7175" font-size="12">$4,210.00 protected</text>
 
-  <!-- Card 4: Win Rate -->
-  <rect x="915" y="112" width="210" height="100" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="935" y="142" fill="#6d7175" font-size="12">Win Rate</text>
-  <text x="935" y="185" fill="#5c6ac4" font-size="32" font-weight="700">74%</text>
+  <!-- Card 3 -->
+  <rect x="908" y="168" width="356" height="90" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="928" y="193" fill="#6d7175" font-size="12">Disputes Lost</text>
+  <text x="928" y="232" fill="#202223" font-size="34" font-weight="700">12</text>
+  <text x="982" y="232" fill="#6d7175" font-size="12">74% win rate</text>
 
-  <!-- Disputes table -->
-  <rect x="240" y="232" width="885" height="420" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="260" y="262" fill="#202223" font-size="16" font-weight="600">Recent Disputes</text>
+  <!-- Open Disputes table -->
+  <rect x="216" y="272" width="1048" height="280" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="300" fill="#202223" font-size="15" font-weight="600">Open Disputes</text>
 
   <!-- Table header -->
-  <rect x="240" y="274" width="885" height="36" fill="#f6f6f7"/>
-  <text x="260" y="297" fill="#6d7175" font-size="12" font-weight="600">ORDER</text>
-  <text x="400" y="297" fill="#6d7175" font-size="12" font-weight="600">CUSTOMER</text>
-  <text x="580" y="297" fill="#6d7175" font-size="12" font-weight="600">AMOUNT</text>
-  <text x="680" y="297" fill="#6d7175" font-size="12" font-weight="600">REASON</text>
-  <text x="850" y="297" fill="#6d7175" font-size="12" font-weight="600">STATUS</text>
-  <text x="980" y="297" fill="#6d7175" font-size="12" font-weight="600">DUE DATE</text>
+  <rect x="216" y="312" width="1048" height="32" fill="#f6f6f7" rx="0"/>
+  <text x="236" y="333" fill="#6d7175" font-size="11" font-weight="600">ORDER</text>
+  <text x="370" y="333" fill="#6d7175" font-size="11" font-weight="600">DISPUTE TYPE</text>
+  <text x="590" y="333" fill="#6d7175" font-size="11" font-weight="600">AMOUNT</text>
+  <text x="700" y="333" fill="#6d7175" font-size="11" font-weight="600">DEADLINE</text>
+  <text x="870" y="333" fill="#6d7175" font-size="11" font-weight="600">STATUS</text>
+  <text x="1020" y="333" fill="#6d7175" font-size="11" font-weight="600">ACTION</text>
 
-  <!-- Row 1 -->
-  <line x1="240" y1="310" x2="1125" y2="310" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="260" y="337" fill="#5c6ac4" font-size="13">#1042</text>
-  <text x="400" y="337" fill="#202223" font-size="13">J. Martinez</text>
-  <text x="580" y="337" fill="#202223" font-size="13">$129.00</text>
-  <text x="680" y="337" fill="#202223" font-size="13">Item not received</text>
-  <rect x="850" y="322" width="80" height="22" rx="11" fill="#fff3cd"/>
-  <text x="890" y="338" fill="#916a00" font-size="11" text-anchor="middle">Pending</text>
-  <text x="980" y="337" fill="#d72c0d" font-size="13">Mar 12</text>
+  <!-- Row 1 - critical -->
+  <line x1="216" y1="344" x2="1264" y2="344" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="368" fill="#5c6ac4" font-size="13">#1042</text>
+  <text x="370" y="368" fill="#202223" font-size="13">Unauthorized Transaction</text>
+  <text x="590" y="368" fill="#202223" font-size="13">USD $129.00</text>
+  <text x="700" y="368" fill="#d72c0d" font-size="13">2 days left</text>
+  <rect x="790" y="353" width="30" height="18" rx="9" fill="#fce8e6"/>
+  <text x="805" y="366" fill="#d72c0d" font-size="10" text-anchor="middle">!</text>
+  <rect x="870" y="353" width="110" height="20" rx="10" fill="#fce8e6"/>
+  <text x="925" y="367" fill="#d72c0d" font-size="11" text-anchor="middle">Needs Response</text>
+  <rect x="1020" y="353" width="100" height="24" rx="4" fill="#f6f6f7" stroke="#c9cfe4" stroke-width="1"/>
+  <text x="1070" y="370" fill="#202223" font-size="12" text-anchor="middle">View Evidence</text>
 
-  <!-- Row 2 -->
-  <line x1="240" y1="352" x2="1125" y2="352" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="260" y="379" fill="#5c6ac4" font-size="13">#1038</text>
-  <text x="400" y="379" fill="#202223" font-size="13">A. Thompson</text>
-  <text x="580" y="379" fill="#202223" font-size="13">$249.00</text>
-  <text x="680" y="379" fill="#202223" font-size="13">Unauthorized charge</text>
-  <rect x="850" y="364" width="100" height="22" rx="11" fill="#d3f0e2"/>
-  <text x="900" y="380" fill="#008060" font-size="11" text-anchor="middle">Evidence Sent</text>
-  <text x="980" y="379" fill="#6d7175" font-size="13">Mar 18</text>
+  <!-- Row 2 - critical -->
+  <line x1="216" y1="386" x2="1264" y2="386" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="410" fill="#5c6ac4" font-size="13">#1038</text>
+  <text x="370" y="410" fill="#202223" font-size="13">Item Not Received</text>
+  <text x="590" y="410" fill="#202223" font-size="13">USD $249.00</text>
+  <text x="700" y="410" fill="#d72c0d" font-size="13">3 days left</text>
+  <rect x="790" y="395" width="30" height="18" rx="9" fill="#fce8e6"/>
+  <text x="805" y="408" fill="#d72c0d" font-size="10" text-anchor="middle">!</text>
+  <rect x="870" y="395" width="110" height="20" rx="10" fill="#fce8e6"/>
+  <text x="925" y="409" fill="#d72c0d" font-size="11" text-anchor="middle">Needs Response</text>
+  <rect x="1020" y="395" width="100" height="24" rx="4" fill="#f6f6f7" stroke="#c9cfe4" stroke-width="1"/>
+  <text x="1070" y="412" fill="#202223" font-size="12" text-anchor="middle">View Evidence</text>
 
   <!-- Row 3 -->
-  <line x1="240" y1="394" x2="1125" y2="394" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="260" y="421" fill="#5c6ac4" font-size="13">#1031</text>
-  <text x="400" y="421" fill="#202223" font-size="13">K. Williams</text>
-  <text x="580" y="421" fill="#202223" font-size="13">$89.00</text>
-  <text x="680" y="421" fill="#202223" font-size="13">Item not as described</text>
-  <rect x="850" y="406" width="60" height="22" rx="11" fill="#d3f0e2"/>
-  <text x="880" y="422" fill="#008060" font-size="11" text-anchor="middle">Won</text>
-  <text x="980" y="421" fill="#6d7175" font-size="13">Mar 05</text>
+  <line x1="216" y1="428" x2="1264" y2="428" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="452" fill="#5c6ac4" font-size="13">#1031</text>
+  <text x="370" y="452" fill="#202223" font-size="13">Refund Not Received</text>
+  <text x="590" y="452" fill="#202223" font-size="13">USD $89.00</text>
+  <text x="700" y="452" fill="#6d7175" font-size="13">9 days left</text>
+  <rect x="870" y="437" width="100" height="20" rx="10" fill="#fff3cd"/>
+  <text x="920" y="451" fill="#916a00" font-size="11" text-anchor="middle">Under Review</text>
+  <rect x="1020" y="437" width="100" height="24" rx="4" fill="#f6f6f7" stroke="#c9cfe4" stroke-width="1"/>
+  <text x="1070" y="454" fill="#202223" font-size="12" text-anchor="middle">View Evidence</text>
 
   <!-- Row 4 -->
-  <line x1="240" y1="436" x2="1125" y2="436" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="260" y="463" fill="#5c6ac4" font-size="13">#1027</text>
-  <text x="400" y="463" fill="#202223" font-size="13">R. Johnson</text>
-  <text x="580" y="463" fill="#202223" font-size="13">$320.00</text>
-  <text x="680" y="463" fill="#202223" font-size="13">Credit not processed</text>
-  <rect x="850" y="448" width="80" height="22" rx="11" fill="#fff3cd"/>
-  <text x="890" y="464" fill="#916a00" font-size="11" text-anchor="middle">Pending</text>
-  <text x="980" y="463" fill="#d72c0d" font-size="13">Mar 14</text>
+  <line x1="216" y1="470" x2="1264" y2="470" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="494" fill="#5c6ac4" font-size="13">#1027</text>
+  <text x="370" y="494" fill="#202223" font-size="13">Cancelled Subscription</text>
+  <text x="590" y="494" fill="#202223" font-size="13">USD $45.00</text>
+  <text x="700" y="494" fill="#6d7175" font-size="13">14 days left</text>
+  <rect x="870" y="479" width="100" height="20" rx="10" fill="#fff3cd"/>
+  <text x="920" y="493" fill="#916a00" font-size="11" text-anchor="middle">Under Review</text>
+  <rect x="1020" y="479" width="100" height="24" rx="4" fill="#f6f6f7" stroke="#c9cfe4" stroke-width="1"/>
+  <text x="1070" y="496" fill="#202223" font-size="12" text-anchor="middle">View Evidence</text>
 
-  <!-- Row 5 -->
-  <line x1="240" y1="478" x2="1125" y2="478" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="260" y="505" fill="#5c6ac4" font-size="13">#1019</text>
-  <text x="400" y="505" fill="#202223" font-size="13">L. Chen</text>
-  <text x="580" y="505" fill="#202223" font-size="13">$175.00</text>
-  <text x="680" y="505" fill="#202223" font-size="13">Subscription cancelled</text>
-  <rect x="850" y="490" width="60" height="22" rx="11" fill="#fce8e6"/>
-  <text x="880" y="506" fill="#d72c0d" font-size="11" text-anchor="middle">Lost</text>
-  <text x="980" y="505" fill="#6d7175" font-size="13">Feb 28</text>
+  <!-- Resolved Disputes table -->
+  <rect x="216" y="566" width="1048" height="200" rx="8" fill="#ffffff" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="594" fill="#202223" font-size="15" font-weight="600">Resolved Disputes</text>
 
-  <!-- Row 6 -->
-  <line x1="240" y1="520" x2="1125" y2="520" stroke="#e1e3e5" stroke-width="1"/>
-  <text x="260" y="547" fill="#5c6ac4" font-size="13">#1014</text>
-  <text x="400" y="547" fill="#202223" font-size="13">M. Davis</text>
-  <text x="580" y="547" fill="#202223" font-size="13">$210.00</text>
-  <text x="680" y="547" fill="#202223" font-size="13">Item not received</text>
-  <rect x="850" y="532" width="60" height="22" rx="11" fill="#d3f0e2"/>
-  <text x="880" y="548" fill="#008060" font-size="11" text-anchor="middle">Won</text>
-  <text x="980" y="547" fill="#6d7175" font-size="13">Feb 22</text>
+  <!-- Table header -->
+  <rect x="216" y="606" width="1048" height="32" fill="#f6f6f7"/>
+  <text x="236" y="627" fill="#6d7175" font-size="11" font-weight="600">ORDER</text>
+  <text x="370" y="627" fill="#6d7175" font-size="11" font-weight="600">DISPUTE TYPE</text>
+  <text x="590" y="627" fill="#6d7175" font-size="11" font-weight="600">AMOUNT</text>
+  <text x="870" y="627" fill="#6d7175" font-size="11" font-weight="600">OUTCOME</text>
 
-  <!-- Evidence auto-collect banner -->
-  <rect x="240" y="672" width="885" height="56" rx="8" fill="#f0f0ff" stroke="#c9cae3" stroke-width="1"/>
-  <text x="260" y="700" fill="#5c6ac4" font-size="13" font-weight="600">Evidence auto-collected</text>
-  <text x="260" y="718" fill="#6d7175" font-size="12">Order details, fulfillment data, and delivery confirmations attached automatically for #1042 and #1027</text>
+  <!-- Resolved row 1 -->
+  <line x1="216" y1="638" x2="1264" y2="638" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="662" fill="#5c6ac4" font-size="13">#1019</text>
+  <text x="370" y="662" fill="#202223" font-size="13">Unauthorized Transaction</text>
+  <text x="590" y="662" fill="#202223" font-size="13">USD $310.00</text>
+  <rect x="870" y="647" width="50" height="20" rx="10" fill="#d3f0e2"/>
+  <text x="895" y="661" fill="#008060" font-size="11" text-anchor="middle">Won</text>
+
+  <!-- Resolved row 2 -->
+  <line x1="216" y1="680" x2="1264" y2="680" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="704" fill="#5c6ac4" font-size="13">#1014</text>
+  <text x="370" y="704" fill="#202223" font-size="13">Item Not Received</text>
+  <text x="590" y="704" fill="#202223" font-size="13">USD $175.00</text>
+  <rect x="870" y="689" width="50" height="20" rx="10" fill="#d3f0e2"/>
+  <text x="895" y="703" fill="#008060" font-size="11" text-anchor="middle">Won</text>
+
+  <!-- Resolved row 3 -->
+  <line x1="216" y1="722" x2="1264" y2="722" stroke="#e1e3e5" stroke-width="1"/>
+  <text x="236" y="746" fill="#5c6ac4" font-size="13">#1008</text>
+  <text x="370" y="746" fill="#202223" font-size="13">Item Not as Described</text>
+  <text x="590" y="746" fill="#202223" font-size="13">USD $59.00</text>
+  <rect x="870" y="731" width="50" height="20" rx="10" fill="#fce8e6"/>
+  <text x="895" y="745" fill="#d72c0d" font-size="11" text-anchor="middle">Lost</text>
 </svg>
